@@ -1,44 +1,275 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>m0zz0's 1990s Home Page</title>
 
-    <head>
-        <title>M0ZZ0's page</title>
-    </head>
+<style>
+body {
+  background: repeating-linear-gradient(45deg, #001, #001 8px, #002 8px, #002 16px);
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
 
-    <body>
+/* Main retro box */
+.page {
+  width: 820px;
+  margin: 20px auto;
+  border: 4px ridge #ff0;
+  background: #000;
+  box-shadow: 8px 8px 0 rgba(255,255,0,0.3);
+}
 
-        <div class="background-image">
+/* Layout */
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-            <h1><i>What you want to do:</i></h1>
-            <ol>
-            <li><a href="downloads/downloads.html">Downloads</a></li>
-            <li><a href="https://youtube.com/M0ZZ0">Youtube channel</a></li>
-            <li><a href="https://www.instagram.com/mozzo_gaming/">Instagram</a></li>
-            <li><a href="https://discord.io/M0ZZ0">Discord server</a></li>
-            <li><a href="https://steamcommunity.com/id/M0ZZ0">Steam</a></li>
-            <li><a href="other/credits.html">Credits</a></li>
-	    <li><a href="other/changelog.html">Change-log</a></li>
-            </ol>
-        
+td.left {
+  width: 180px;
+  vertical-align: top;
+  background: #002;
+  border-right: 3px solid #ff0;
+  padding: 10px;
+}
+
+td.main {
+  vertical-align: top;
+  background: #000;
+  padding: 14px;
+}
+
+/* Title area */
+.titlebar {
+  background: #ff00ff;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 3px solid #000;
+}
+
+/* Marquee */
+marquee {
+  color: #0ff;
+  font-weight: bold;
+  background: #111;
+  border-top: 2px solid #0ff;
+  border-bottom: 2px solid #0ff;
+  padding: 4px 0;
+}
+
+/* Navigation */
+.left a {
+  display: block;
+  color: #ff0;
+  text-decoration: underline;
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+hr.v {
+  border: 0;
+  border-top: 2px dashed #ff0;
+  margin: 10px 0;
+}
+
+/* Blinking text */
+.blink {
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Visitor counter */
+.counterbox {
+  background: #111;
+  border: 2px inset #0ff;
+  color: #0ff;
+  text-align: center;
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* Section headers */
+h2, h3 {
+  color: #ff0;
+  text-shadow: 0 0 6px #ff0;
+  border-bottom: 1px dotted #555;
+  padding-bottom: 2px;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Links in main content */
+.main a { color: #0ff; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  background: #111;
+  border-top: 2px solid #0ff;
+  padding: 8px;
+}
+.footer a { color: #fff; }
+
+/* Decorative */
+.box {
+  background: #002;
+  border: 2px inset #0ff;
+  padding: 6px;
+  margin: 8px 0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="titlebar">
+    <marquee behavior="alternate" scrollamount="5">Welcome to m0zz0's Retro Home Page ✧✦</marquee>
+  </div>
+
+  <table class="layout">
+    <tr>
+      <td class="left">
+        <font color="#ff0"><b>Navigation</b></font>
+        <hr class="v">
+        <a href="#about">> About Me</a>
+        <a href="#music">> Music</a>
+        <a href="#links">> Links</a>
+        <a href="#games">> Games</a>
+        <a href="#tetrio_settings">> Tetrio Settings</a>
+
+        <hr class="v">
+
+        <div class="counterbox">
+          Visitors:<br>
+          <span id="counter">0000</span>
         </div>
 
+        <div class="box" style="text-align:center;">
+          <font color="#0f0">Status: Online</font><br>
+          <font color="#f00">Busy = Red</font>
+        </div>
 
-    </body>
+        <hr class="v">
+        <font color="#ff0"><b>My Socials</b></font><br>
+        <ul>
+          <li><a href="https://youtube.com/m0zz0">YouTube</a></li>
+          <li><a href="https://steamcommunity.com/id/M0ZZ0">Steam</a></li>
+          <li><a href="downloads/downloads.html">Downloads</a></li>
+        </ul>
 
-    <style>
+        <hr class="v">
+        <center><span class="blink" style="color:#0ff;">Under Construction!</span></center>
+      </td>
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .background-image{
-            background-image: url('other/background.png');
-            background-size:cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            color:rgb(1, 32, 167);
-            text-align: center;
-        }
-    </style>
+      <td class="main">
+        <a name="about"></a>
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm <b>m0zz0</b> — musician, gamer, and programmer. This page lives forever in the late '90s, full of CRT glow, neon, and nostalgia.
+        </p>
 
+        <hr class="v">
+
+        <a name="Wishlist"></a>
+        <h3>Wishlist</h3>
+        <ul>
+          <li><b>Thing 01:</b> <a href="https://pl.aliexpress.com/item/1005008783372475.html">Portapack H4M + HackRF</a></li>
+          <li><b>Thing 02:</b> <a href="https://www.thomann.pl/behringer_system_35.htm">Behringer System 35</a></li>
+        </ul>
+
+        <hr class="v">
+
+        <a name="music"></a>
+        <h3>Latest Tracks</h3>
+        <ul>
+          <li><b>Track 01:</b> Remake of Sweet Dreams</li>
+          <li><b>Track 02:</b> Remake of Zombie Nation</li>
+          <li><b>Future:</b> Cassette release incoming</li>
+        </ul>
+
+        <hr class="v">
+
+        <a name="games"></a>
+        <h3>Games I Play</h3>
+        <ul>
+          <li>Tetris</li>
+          <li>Hurtworld</li>
+          <li>Minecraft</li>
+          <li>Tibia</li>
+          <li>TheHunter: Call of the Wild</li>
+          <li>Phasmophobia</li>
+        </ul>
+
+        <hr class="v">
+
+        <a name="tetris_clients"></a>
+        <h3>My Favorite Tetris Clients</h3>
+        <ul>
+          <li>Tetr.io</li>
+          <li>Tetr.io Plus</li>
+          <li>Tetra ESPORTS</li>
+          <li>Tetris® Effect: Connected</li>
+          <li>tetris.com web client</li>
+        </ul>
+
+        <hr class="v">
+
+        <a name="tetrio_settings"></a>
+        <h3>Tetr.io Settings</h3>
+        <p>
+          <b>Handling (Gamepad)</b><br>
+          ARR: 1F<br>
+          DAS: 7.5F<br>
+          DCD: 2.4F<br>
+          SDF: 35X<br>
+        </p>
+
+        <hr class="v">
+        <pre style="background:#111; padding:10px; border:2px solid #0ff; color:#0f0;">
+ __  __   ____   ______   ______   ____
+|  \/  | / __ \ |___  /  |___  /  / __ \
+| \  / || |  | |   / /     / /  | |  | |
+| |\/| || |  | |  / /     / /   | |  | |
+| |  | || |__| | / /__   / /__  | |__| |
+|_|  |_| \____/ /_____| /_____|  \____/
+</pre>
+
+
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    Page created by: <b>m0zz0</b> · Last updated: <span id="today"></span><br>
+    <a href="#top">Back to top</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  const key = 'retro_counter_v2';
+  let v = parseInt(localStorage.getItem(key) || '0', 10);
+  if (isNaN(v)) v = 0;
+  v++;
+  localStorage.setItem(key, v);
+  document.getElementById('counter').textContent = String(v).padStart(4,'0');
+  const d = new Date();
+  document.getElementById('today').textContent = d.toISOString().slice(0,10);
+})();
+</script>
+
+</body>
 </html>
