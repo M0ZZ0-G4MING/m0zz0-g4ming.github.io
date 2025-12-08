@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykładowa Strona HTML5</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6; }
+        header, footer { background: #f0f0f0; padding: 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+        table, th, td { border: 1px solid black; padding: 8px; }
+        aside { background: #eef5ff; padding: 10px; margin-top: 15px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Moja Przykładowa Strona HTML5</h1>
+    <nav>
+        <a href="#sekcja1">Sekcja 1</a> |
+        <a href="#sekcja2">Sekcja 2</a> |
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia (zewnętrzna)</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="sekcja1">
+    <h2>Wprowadzenie</h2>
+    <p>
+        Jest to przykładowa strona stworzona w celu zaprezentowania różnych elementów HTML5.
+        Zawiera ona nagłówki, obrazy, formularz, multimedia oraz tabelę.
+    </p>
+    <p>
+        Strona została przygotowana tak, aby spełnić wymagania projektu z HTML5.
+    </p>
+
+    <h3>Przykładowa lista</h3>
+    <ul>
+        <li>Element pierwszy</li>
+        <li>Element drugi</li>
+        <li>Element trzeci</li>
+    </ul>
+
+</section>
+
+<section id="sekcja2">
+    <h2>Tabela danych</h2>
+    <table>
+        <tr>
+            <th>Imię</th>
+            <th>Wiek</th>
+            <th>Miasto</th>
+        </tr>
+        <tr>
+            <td>Alicja</td>
+            <td>21</td>
+            <td>Warszawa</td>
+        </tr>
+        <tr>
+            <td>Bartek</td>
+            <td>25</td>
+            <td>Kraków</td>
+        </tr>
+    </table>
+</section>
+
+<aside>
+    <h3>Ciekawostka</h3>
+    <p>
+        HTML5 wprowadza wiele nowych elementów semantycznych, które poprawiają strukturę strony
+        oraz pomagają robotom wyszukiwarek w lepszym rozumieniu treści.
+    </p>
+</aside>
+
+<section>
+    <h2>Formularz kontaktowy</h2>
+    <form>
+        <label>Imię:<br>
+            <input type="text" name="imie" required>
+        </label><br><br>
+
+        <label>E-mail:<br>
+            <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>Treść wiadomości:<br>
+            <textarea name="wiadomosc" required></textarea>
+        </label><br><br>
+
+        <button type="submit">Wyślij</button>
+    </form>
+</section>
+
+<section>
+    <h2>Multimedia</h2>
+
+    <h3>Przykładowy film (YouTube)</h3>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        title="YouTube video" allowfullscreen>
+    </iframe>
+
+    <h3>Przykładowe audio</h3>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Twoja przeglądarka nie wspiera elementu audio.
+    </audio>
+</section>
+
+</main>
+
+<footer>
+    <p>Strona przykładowa © 2025</p>
+</footer>
+
+</body>
+</html>
